@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://xgnv0r5lx4p4"]
+
+[ext_resource type="Script" uid="uid://6d0c0o6upj0f" path="res://src/Extensions/ColorChecker/Main.gd" id="1"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1")

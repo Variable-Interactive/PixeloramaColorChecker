@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtf01bcub0bto"]
+
+[ext_resource type="Script" uid="uid://c7lli5n26ouup" path="res://src/Extensions/MatchOldColor/color_matcher.gd" id="1_kudog"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kudog"]
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="colorMatcher" type="PanelContainer"]
+offset_right = 35.0
+offset_bottom = 50.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kudog")
+script = ExtResource("1_kudog")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/h_separation = 0
+columns = 2
+
+[node name="old" type="ColorRect" parent="GridContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="new" type="ColorRect" parent="GridContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3

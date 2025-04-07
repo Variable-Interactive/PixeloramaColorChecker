@@ -1,0 +1,10 @@
+{
+"author": "Variable",
+"description": "Helps match colors when choosing a new color for the tool",
+"display_name": "Color Checker",
+"license": "MIT",
+"name": "ColorChecker",
+"nodes": ["Main.tscn"],
+"supported_api_versions": [6],
+"version": "0.1"
+}
